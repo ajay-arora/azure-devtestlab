@@ -1,0 +1,42 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "southeastasia"
+        },
+        "virtualMachineName": {
+            "value": "VmFromImage"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_D2s_v3"
+        },
+        "adminUsername": {
+            "value": "ajay"
+        },
+        "virtualNetworkName": {
+            "value": "DtlAjLab"
+        },
+        "networkInterfaceName": {
+            "value": "vmfromimage411"
+        },
+        "networkSecurityGroupName": {
+            "value": "VmFromImage-nsg"
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "subnetName": {
+            "value": "DtlAjLabSubnet"
+        },
+        "publicIpAddressName": {
+            "value": "VmFromImage-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        }
+    }
+}
