@@ -46,7 +46,7 @@
         }
     },
     "variables": {
-        "vnetId": "[resourceId('AjTrial1','Microsoft.Network/virtualNetworks', parameters('virtualNetworkName'))]",
+        "vnetId": "[resourceId('ajlabinprodrg154328','Microsoft.Network/virtualNetworks', parameters('virtualNetworkName'))]",
         "subnetRef": "[concat(variables('vnetId'), '/subnets/', parameters('subnetName'))]"
     },
     "resources": [
@@ -91,7 +91,7 @@
             "properties": {
                 "creationData": {
                     "createOption": "copy",
-                    "sourceUri": "/subscriptions/e605a3bc-ee4e-4c7a-9709-1868a28b1d4d/resourceGroups/AJLABRG674122/providers/Microsoft.Compute/snapshots/ForImageNoPrep"
+                    "sourceUri": "/subscriptions/e605a3bc-ee4e-4c7a-9709-1868a28b1d4d/resourceGroups/ajlabinprodrg154328/providers/Microsoft.Compute/snapshots/VMNoSys2"
                 },
                 "accountType": "Premium_LRS",
                 "diskSizeGB": "128",
@@ -139,13 +139,13 @@
                             },
                             "privateIPAllocationMethod": "Dynamic",
                             "publicIpAddress": {
-                                "id": "[resourceId('AjTrial1','Microsoft.Network/publicIpAddresses', parameters('publicIpAddressName'))]"
+                                "id": "[resourceId('ajlabinprodrg154328','Microsoft.Network/publicIpAddresses', parameters('publicIpAddressName'))]"
                             }
                         }
                     }
                 ],
                 "networkSecurityGroup": {
-                    "id": "[resourceId('AjTrial1', 'Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroupName'))]"
+                    "id": "[resourceId('ajlabinprodrg154328', 'Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroupName'))]"
                 }
             }
         },
